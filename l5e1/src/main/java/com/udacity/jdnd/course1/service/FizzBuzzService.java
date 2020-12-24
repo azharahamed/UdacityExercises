@@ -11,8 +11,8 @@ public class FizzBuzzService {
      */
     public String fizzBuzz(int number) {
         String returnString = "";
-        if(number < 0){
-            throw new IllegalArgumentException();
+        if(number <= 0){
+            throw new IllegalArgumentException("Testing");
         }
         if (number%3==0){
             returnString = "Fizz";
