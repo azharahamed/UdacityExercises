@@ -10,7 +10,7 @@ import org.springframework.boot.test.context.SpringBootTest;
 
 import java.util.List;
 
-@SpringBootTest
+@SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
 public class SeleniumTest {
     @Test
     public static void main(String[] args) throws InterruptedException {
